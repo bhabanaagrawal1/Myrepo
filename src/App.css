@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+html,
+body,
+#root {
+  width: 100%;
+  background: #000;
+}
+main{
+  position: relative;
+  font-family: "Heebo", sans-serif;
+}
+#canvas-ele::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url(/background-l.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s linear;
+}
+#section-1,#section-2,#section-3,#section-4,#section-5,#section-6{
+  background: transparent;
+  position: relative;
+  z-index: 3;
+}
+#one{
+  font-family: "DM Serif Display", serif;
+}
+#two{
+  font-family: "Quicksand", sans-serif;
+}
+.imgs{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
+main:has(#section-3 .three:hover) #canvas-ele::after{
+  opacity: 0;
+}
+main:has(#section-3 .three[iid="tommorowland"]:hover) #tommorowland{
+  opacity: 1;
+  background-color: rgb(6, 12, 46);
+}
+main:has(#section-3 .three[iid="navy-pier"]:hover) #navy-pier{
+  opacity: 1;
+  background-color: rgb(6, 12, 46);
+}
+main:has(#section-3 .three[iid="msi-chicago"]:hover) #msi-chicago{
+  opacity: 1;
+  background-color: rgb(6, 12, 46);
+}
+main:has(#section-3 .three[iid="phone"]:hover) #phone{
+  opacity: 1;
+  background-color: rgb(6, 12, 46);
+}
+main:has(#section-3 .three[iid="kikk"]:hover) #kikk{
+  opacity: 1;
+  background-color: rgb(15, 25, 78);
+}
+main:has(#section-3 .three[iid="kennedy"]:hover) #kennedy{
+  opacity: 1;
+  background-color: rgb(6, 41, 22);
+}
+main:has(#section-3 .three[iid="opera"]:hover) #opera{
+  opacity: 1;
+  background-color: rgba(165, 5, 5, 0.733);
+}
+#section-4{
+  z-index: 0;
+}
