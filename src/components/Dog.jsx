@@ -71,7 +71,6 @@ const Dog = () => {
             endTrigger: "#section-5",
             start: "top top", //section-1 ka top jab viewport ke top ko cross karega animation start
             end: "bottom bottom", //section-4 ka bottom jab viewport ke bottom ko pahnch jayega animation end
-            markers: true,
             scrub: true,
         }
     })
